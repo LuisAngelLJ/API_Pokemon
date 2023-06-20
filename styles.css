@@ -1,0 +1,73 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('textura.png');
+	background-repeat: repeat;
+}
+
+nav {
+	border-bottom: 2px solid yellow;
+}
+
+main {
+	height: calc(100vh - 58px);
+}
+
+main .row {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+main .row .botton-container {
+	text-align: center;
+	margin-top: 80px;
+}
+
+main .row #go {
+	width: 100px;
+}
+
+main .card {
+	border: 3px solid black;
+	transition: 1s transform ease-in-out;
+	padding: 0;
+}
+
+main .card:hover {
+	transform: scale(1.1);
+}
+
+main .card .card-body {
+	background-color: red;
+}
+
+main .card .card-body .card-title {
+	color: white;
+	text-align: center;
+}
+
+.cont-temporizador {
+	margin-top: 40px;
+}
+
+.cont-temporizador .bloque {
+	display: flex;
+	justify-content: center;
+}
+
+.cont-temporizador .bloque .segundos {
+	background-color: white;
+	color: black;
+	text-align: center;
+	width: 70px;
+	font-size: 30px;
+	border-radius: 50%;
+	border: 3px solid black;
+}
